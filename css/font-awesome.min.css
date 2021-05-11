@@ -1,0 +1,16 @@
+.fa-map:before{
+    content: "图";
+}
+.fa-typhoon:before{
+    content: "风"
+}
+.fa-wind:before{
+    content: "场"
+}
+.fa-earthquake:before{
+    content: "震"
+}
+.fa-setting:before{
+    content: "设"
+}
+

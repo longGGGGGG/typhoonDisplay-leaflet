@@ -1,0 +1,1506 @@
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none
+}
+
+i {
+    font-style: normal
+}
+
+.map {
+    width: 650px;
+    height: 488px;
+    margin-top: 0
+}
+
+.BMapLabel {
+    max-height: 70px
+}
+
+.BMap_pop .BMap_bottom {
+    background-color: #ffd801!important;
+    border: 1px solid #ffd801!important;
+    height: 23px!important
+}
+
+.BMap_pop .BMap_center {
+    background-color: #ffd801!important;
+    border: 1px solid #ffd801!important
+}
+
+.BMap_pop .BMap_top {
+    background-color: #ffd801!important;
+    border: 1px solid #ffd801!important
+}
+
+.BMap_pop>div>div {
+    background: #ffd801!important;
+    border: 1px solid #ffd801!important
+}
+
+.BMap_pop img {
+    width: 10px!important;
+    height: 10px!important
+}
+
+.dis {
+    display: none
+}
+
+.content {
+    width: 650px;
+    height: 488px;
+    position: relative
+}
+
+.typhoonMsg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #3674ba;
+    opacity: .9;
+    font-size: 12px
+}
+
+.typhoonDistance {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #3674ba;
+    opacity: .9;
+    font-size: 12px
+}
+
+.legend {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    cursor: pointer
+}
+
+.brlogo {
+    position: absolute;
+    bottom: 38px;
+    *bottom: -88px;
+    _bottom: -88px;
+    right: 8px
+}
+
+.showLegendBtn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffd800;
+    background: #183d7b
+}
+
+.hideLegendBtn {
+    height: 30px;
+    line-height: 30px;
+    color: #ffd800;
+    background: #183d7b
+}
+
+.btnList {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 28px
+}
+
+.btnList .btnLi {
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background: #183d7b;
+    padding: 0 8px;
+    margin-left: 5px;
+    float: left;
+    cursor: pointer;
+    width: 55px;
+    font-size: 12px
+}
+
+.btnList .btnLi:hover {
+    background: #2d5290;
+    color: #fff
+}
+
+.btnList .cur {
+    background: #ffd800;
+    color: #000
+}
+
+.btnList .cur:hover {
+    background: #ffd800;
+    color: #000
+}
+
+.imgInfoDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px
+}
+
+.imgInfo {
+    width: 100%;
+    height: 30px;
+    background: #183d7b;
+    font-size: 12px
+}
+
+.imgInfoLeft {
+    height: 30px;
+    line-height: 30px;
+    color: #ffd800;
+    float: left;
+    margin-left: 10px
+}
+
+.imgInfoRight {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    float: right;
+    margin-right: 10px
+}
+
+.radarNav {
+    width: 100%;
+    height: 25px;
+    font-size: 14px
+}
+
+.radarNav .radarNavLi {
+    width: 50%;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    background: #0c2559;
+    color: #fff;
+    cursor: pointer
+}
+
+.radarNav .active {
+    background: #4d8cd3
+}
+
+.radarContent {
+    width: 100%;
+    height: 50px;
+    background: #183d7b;
+    opacity: .9
+}
+
+.radarStatus {
+    width: 86%;
+    height: 50px;
+    float: left
+}
+
+.radarStatus .playDiv {
+    width: 100%;
+    height: 20px
+}
+
+.radarStatus .playDiv .playLi {
+    width: 95%;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto
+}
+
+.radarStatus .playDiv .playLi a {
+    float: left;
+    width: 7%;
+    height: 10px;
+    background: #45526e;
+    margin-left: 3px
+}
+
+.radarStatus .playDiv .playLi24 a {
+    float: left;
+    width: 3.4%;
+    height: 10px;
+    background: #45526e;
+    margin-left: 2px
+}
+
+.radarStatus .playDiv .playLi a:hover {
+    background: #fff;
+    cursor: pointer
+}
+
+.radarStatus .playDiv .playLi .active {
+    background: #ffd800
+}
+
+.radarPlay {
+    width: 14%;
+    height: 50px;
+    float: left
+}
+
+.radarPlay .playBtn {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-position: -135px 0;
+    cursor: pointer
+}
+
+.radarPlay .pauseBtn {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-position: -84px 0;
+    cursor: pointer
+}
+
+.typhoonInfoList {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    width: 275px;
+}
+
+.typhoonInfoTitle {
+    width: 100%;
+    height: 10px;
+    background: #183d7b
+}
+
+.typhoonInfoTitle .activeTyphoon {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+    margin-left: 10px
+}
+
+.typhoonInfoTitle .activeTyphoon:hover {
+    color: #ffd800;
+    cursor: pointer
+}
+
+.typhoonInfoTitle .typhoonInfo {
+    height: 30px;
+    line-height: 30px;
+    color: #ffd800;
+    float: left;
+    margin-left: 10px
+}
+
+.typhoonInfoTitle .typhoonInfo:hover {
+    cursor: pointer
+}
+
+.typhoonInfoTitle .more {
+    height: 30px;
+    line-height: 25px;
+    width: 30px;
+    text-align: center;
+    color: #9cc7f3;
+    float: right;
+    cursor: pointer;
+    font-size: 25px
+}
+
+.typhoonInfoList .typhoonPointList {
+    background: #8b9097;
+    opacity: .9;
+    width: 100%;
+}
+
+.typhoonInfoList .typhoonPointList .tableTitle {
+    color: #070600;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.typhoonInfoList .typhoonPointList .tableTitle span {
+    text-align: center;
+    width: 25%;
+    display: block;
+    float: left;
+    padding: 10px 0;
+    font-size: 14px
+}
+
+/**/
+
+.typhoonPointInfoList {
+    position: absolute;
+    background: #e7ebf0;
+    top: 50px;
+    left: 5px;
+    right: 5px;
+    bottom: 10px;
+    width: 410px;
+    height: 335px;
+}
+
+.typhoonPointInfoList .typhoonPPointList {
+    background: #8b9097;
+    opacity: .9;
+    width: 100%;
+}
+
+.typhoonPointInfoList .typhoonPPointList .tablePointTitle {
+    color: #070600;
+    height: 40px;
+    line-height: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.typhoonPointInfoList .typhoonPPointList span {
+    text-align: center;
+    width: 11%;
+    display: block;
+    float: left;
+    padding: 5px 0;
+    font-size: 14px
+}
+
+.typhoonPointInfoList .typhoonPPointList time {
+    text-align: center;
+    width: 20%;
+    display: block;
+    float: left;
+    padding: 5px 0;
+    font-size: 14px
+}
+
+.typhoonPointInfoList .typhoonPPointList latlng {
+    text-align: center;
+    width: 20%;
+    display: block;
+    float: left;
+    padding: 5px 0;
+    font-size: 14px
+}
+
+.typhoonPointInfoList .typhoonPPointList .tableList {
+    color: rgb(12, 12, 12);
+    background: #e7ebf0;
+    height: 90%;
+    width: 100%;
+    line-height: 20px;
+    font-size: 10px;
+    overflow-y:scroll;
+    position: absolute;
+}
+
+.typhoonPointInfoList .typhoonPPointList .tableList .tableTr {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 5px;
+    text-align: center;
+    position: relative;
+}
+.timeSelect {
+    background: rgb(255, 221, 69);
+}
+
+.typhoonPointInfoList .typhoonPPointList .tableList .tableTr:hover {
+    background: #608de2;
+}
+
+.typhoonPointInfoList .typhoonPPointList .tableList .tableTr span{
+    width: 11%;
+    line-height: 10px;
+    font-size: 5px;
+    display: block;
+}
+.typhoonPointInfoList .typhoonPPointList .tableList .tableTr time{
+    width: 20%;
+    line-height: 10px;
+    font-size: 5px;
+    display: block;
+}
+
+.typhoonPointInfoList .typhoonPPointList .tableList .tableTr latlng{
+    width: 20%;
+    line-height: 10px;
+    font-size: 5px;
+    display: block;
+}
+/**/
+
+
+.typhoonInfoList .typhoonPointList .tableList {
+    color: rgb(12, 12, 12);
+    background: #e7ebf0;
+    height: 295px;
+    line-height: 20px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.typhoonInfoList .typhoonPointList .tableList .tableTr {
+    width: 100%;
+    height: 20px;
+    line-height: 10px;
+    cursor: default;
+    padding: 5px 0;
+}
+
+.typhoonSelected{
+    background: rgb(255, 221, 69);
+}
+
+.typhoonInfoList .typhoonPointList .tableList .tableTr:hover {
+    width: 100%;
+    height: 20px;
+    line-height: 10px;
+    cursor: default;
+    background: #608de2;
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.typhoonInfoList .typhoonPointList .tableList span {
+    text-align: center;
+    width: 25%;
+    display: block;
+    float: left
+}
+
+.typhoonInfoList .typhoonInfoBottom {
+    width: 100%;
+    height: 36px;
+    background: #183d7b
+}
+
+.typhoonInfoList .typhoonInfoBottom .playInfo {
+    height: 36px;
+    line-height: 36px;
+    width: 20%;
+    float: left;
+    color: #fff;
+    font-size: 12px
+}
+
+.typhoonInfoList .typhoonInfoBottom .playSpeed {
+    height: 36px;
+    line-height: 36px;
+    width: 54%;
+    float: left;
+    position: relative
+}
+
+.typhoonInfoList .typhoonInfoBottom .playSpeed .rod {
+    height: 2px;
+    background: #000;
+    margin-top: 18px;
+    *position: relative;
+    _position: relative;
+    *top: 18px;
+    _top: 18px
+}
+
+.typhoonInfoList .typhoonInfoBottom .playSpeed .cursor {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.typhoonInfoList .typhoonInfoBottom .playSpeed .handle {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat;
+    position: absolute;
+    top: 13px;
+    height: 11px;
+    width: 14px;
+    background-position: -47px 0;
+    cursor: pointer
+}
+
+.typhoonInfoList .typhoonInfoBottom .playButton {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-left: 3%;
+    width: 55px;
+    float: left;
+    color: #000;
+    background: #ffd800;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px
+}
+
+.typhoonInfoList .typhoonInfoBottom .playButton:hover {
+    background: #d2a80a
+}
+
+.none {
+    display: none
+}
+
+.area {
+    margin-top: 0
+}
+
+.area span {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    line-height: 30px
+}
+
+.area span i {
+    color: #f3478c
+}
+
+.area em {
+    font-size: 14px;
+    color: #d80000
+}
+
+.area ul {
+    display: inline-block
+}
+
+.area ul li {
+    display: inline-block
+}
+
+.return_reques {
+    position: absolute;
+    right: 37%;
+
+}
+
+.return_reques input:hover {
+    cursor: pointer
+}
+
+.return_reques input {
+    width: 93px;
+    height: 24px;
+    padding-left: 5px;
+    background-color: #fff;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 14px;
+    color: #0c2559
+}
+
+.return_reques .local {
+    background: #ffd800 url(https://i.tq121.com.cn/i/typhoon/bot_imgs.png) no-repeat;
+    background-position: 99% center
+}
+
+.return_reques .local2 {
+    background: url(https://i.tq121.com.cn/i/typhoon/bot_imgs.png) no-repeat;
+    background-position: 99% center
+}
+
+.return_reques .bomb_con_style {
+    background-color: #f8e88e;
+    position: absolute;
+    left: 0;
+    *left: 18px;
+    _left: 18px;
+    z-index: 999999;
+    cursor: pointer;
+    height: 130px;
+    font-size: 14px;
+    overflow: auto;
+    top: 34px;
+    *top: -122px;
+    _top: -122px;
+    width: 98px!important;
+    text-align: left
+}
+
+.return_reques .bomb_con_style dd {
+    background-color: #f8e88e;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #666;
+    text-indent: .5em
+}
+
+.return_reques .bomb_con_style dd:hover {
+    background-color: #ffd800;
+    color: #000
+}
+
+.typhoonList {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100px;
+    height: 75%;
+}
+
+.typhoonList .typhoonListTitle {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #8b9097
+}
+
+.typhoonList .typhoonListTitle .title {
+    color: #000000;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+
+.typhoonList .typhoonListTitle .year {
+    color: #ffd800;
+    width: 100px;
+    float: left;
+    text-align: center
+}
+
+.typhoonList .typhoonListTitle .close {
+    color: #9cc7f3;
+    width: 15%;
+    float: right;
+    cursor: pointer;
+    font-size: 20px
+}
+
+.typhoonList .typhoonListContent {
+    background: #e7ebf0;
+    opacity: .9;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0
+}
+
+.typhoonList .typhoonListContent .list {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    position: absolute;
+    *position: relative;
+    _position: relative
+}
+
+.selectTyphoonRow {
+    float: left;
+    width: 70%;
+    height: 28px;
+    line-height: 28px;
+    color: #1b1a1a;
+    text-align: left;
+    font-size: 12px;
+    cursor: pointer;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.selectTyphoonRow:hover {
+    background: #608de2
+}
+
+.selectLeftDiv {
+    float: left;
+    text-align: right;
+    margin-right: 10px
+}
+
+.forecastDiv {
+    height: 170px;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    background: #fff;
+    cursor: move
+}
+
+.forecastDiv .closePop {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #c3c3c3;
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    right: -9px;
+    text-align: center;
+    text-decoration: none;
+    top: -9px;
+    width: 18px
+}
+
+.forecastDiv .ybDiv {
+    width: 135px;
+    background: #4c8cd3;
+    height: 170px;
+    float: left
+}
+
+.forecastDiv .ybDiv #pCityName {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff
+}
+
+.forecastDiv .ybDiv #pCityName:hover {
+    color: #ee842f
+}
+
+.forecastDiv .ybDiv #weather {
+    text-align: center;
+    color: #fff;
+    float: left;
+    width: 96%;
+    margin-left: 2%;
+    font-size: 12px;
+    height: 17px;
+    overflow: hidden
+}
+
+.forecastDiv .ybDiv #wind {
+    text-align: center;
+    color: #fff;
+    float: left;
+    width: 100%;
+    font-size: 12px
+}
+
+.forecastDiv .ybDiv .dnInfo {
+    height: 80px;
+    width: 80%;
+    float: left;
+    margin-left: 10%
+}
+
+.forecastDiv .ybDiv .dnInfo span {
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 12px
+}
+
+.forecastDiv .ybDiv .dnInfo .dayInfo {
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    float: left
+}
+
+.forecastDiv .ybDiv .dnInfo .dayInfo h3 {
+    font-size: 16px;
+    color: #fdd600
+}
+
+.forecastDiv .ybDiv .dnInfo .nightInfo {
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    float: right
+}
+
+.forecastDiv .ybDiv .dnInfo .nightInfo h3 {
+    font-size: 16px;
+    color: #091933
+}
+
+.forecastDiv .nowDiv {
+    width: 115px;
+    background: #fff;
+    height: 170px;
+    float: left;
+    font-size: 12px
+}
+
+.forecastDiv .nowDiv .newNowTime {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #666
+}
+
+.forecastDiv .nowDiv .newTemp {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-family: "å¾®è½¯é›…é»‘";
+    color: #091933
+}
+
+.forecastDiv .nowDiv .newWindImg {
+    width: 100%;
+    height: 60px
+}
+
+.windFX {
+    float: left;
+    text-align: right;
+    width: 55px
+}
+
+.forecastDiv .nowDiv .newWindImg .windFXBg {
+    background: url(https://i.tq121.com.cn/i/typhoon/windFXBg.png) no-repeat;
+    height: 66px;
+    width: 70px;
+    position: absolute;
+    right: 22.5px
+}
+
+.forecastDiv .nowDiv .newWindImg .SE {
+    background-position: 0 0
+}
+
+.forecastDiv .nowDiv .newWindImg .S {
+    background-position: -70px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .W {
+    background-position: -140px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .SW {
+    background-position: -210px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .N {
+    background-position: -280px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .E {
+    background-position: -350px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .NW {
+    background-position: -420px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .NE {
+    background-position: -490px 0
+}
+
+.forecastDiv .nowDiv .newWindImg .windLevel {
+    position: absolute;
+    left: 186px;
+    top: 95px;
+    font-size: 12px
+}
+
+.forecastDiv .nowDiv .windHumidity {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #091933;
+    padding-top: 5px
+}
+
+.forecastDiv .nowDiv .windHumidity .dataSD {
+    margin-left: 5px;
+    float: left
+}
+
+big {
+    background-position: -640px 240px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto
+}
+
+big.png40 {
+    background-image: url("https://i.tq121.com.cn/i/weather2015/png/white30.png");
+    height: 30px;
+    width: 30px
+}
+
+big.d0 {
+    background-position: 0 0
+}
+
+big.d1 {
+    background-position: -80px 0
+}
+
+big.d2 {
+    background-position: -160px 0
+}
+
+big.d3 {
+    background-position: -240px 0
+}
+
+big.d4 {
+    background-position: -320px 0
+}
+
+big.d5 {
+    background-position: -400px 0
+}
+
+big.d6 {
+    background-position: -480px 0
+}
+
+big.d7 {
+    background-position: -560px 0
+}
+
+big.d8 {
+    background-position: -640px 0
+}
+
+big.d9 {
+    background-position: 0 -80px
+}
+
+big.d00 {
+    background-position: 0 0
+}
+
+big.d01 {
+    background-position: -80px 0
+}
+
+big.d02 {
+    background-position: -160px 0
+}
+
+big.d03 {
+    background-position: -240px 0
+}
+
+big.d04 {
+    background-position: -320px 0
+}
+
+big.d05 {
+    background-position: -400px 0
+}
+
+big.d06 {
+    background-position: -480px 0
+}
+
+big.d07 {
+    background-position: -560px 0
+}
+
+big.d08 {
+    background-position: -640px 0
+}
+
+big.d09 {
+    background-position: 0 -80px
+}
+
+big.d10 {
+    background-position: -80px -80px
+}
+
+big.d11 {
+    background-position: -160px -80px
+}
+
+big.d12 {
+    background-position: -240px -80px
+}
+
+big.d13 {
+    background-position: -320px -80px
+}
+
+big.d14 {
+    background-position: -400px -80px
+}
+
+big.d15 {
+    background-position: -480px -80px
+}
+
+big.d16 {
+    background-position: -560px -80px
+}
+
+big.d17 {
+    background-position: -640px -80px
+}
+
+big.d18 {
+    background-position: 0 -160px
+}
+
+big.d19 {
+    background-position: -80px -160px
+}
+
+big.d20 {
+    background-position: -160px -160px
+}
+
+big.d21 {
+    background-position: -240px -160px
+}
+
+big.d22 {
+    background-position: -320px -160px
+}
+
+big.d23 {
+    background-position: -400px -160px
+}
+
+big.d24 {
+    background-position: -480px -160px
+}
+
+big.d25 {
+    background-position: -560px -160px
+}
+
+big.d26 {
+    background-position: -640px -160px
+}
+
+big.d27 {
+    background-position: 0 -240px
+}
+
+big.d28 {
+    background-position: -80px -240px
+}
+
+big.d29 {
+    background-position: -160px -240px
+}
+
+big.d30 {
+    background-position: -240px -240px
+}
+
+big.d31 {
+    background-position: -320px -240px
+}
+
+big.d32 {
+    background-position: -400px -240px
+}
+
+big.d33 {
+    background-position: -480px -240px
+}
+
+big.d53 {
+    background-position: -560px -240px
+}
+
+big.d57 {
+    background-position: -720px 0
+}
+
+big.d32 {
+    background-position: -720px -80px
+}
+
+big.d49 {
+    background-position: -720px -160px
+}
+
+big.d58 {
+    background-position: -720px -240px
+}
+
+big.d54 {
+    background-position: -800px 0
+}
+
+big.d55 {
+    background-position: -800px -80px
+}
+
+big.d56 {
+    background-position: -800px -160px
+}
+
+big.d301 {
+    background-position: -880px 0
+}
+
+big.d302 {
+    background-position: -880px -80px
+}
+
+big.n0 {
+    background-position: 0 -320px
+}
+
+big.n1 {
+    background-position: -80px -320px
+}
+
+big.n2 {
+    background-position: -160px -320px
+}
+
+big.n3 {
+    background-position: -240px -320px
+}
+
+big.n4 {
+    background-position: -320px -320px
+}
+
+big.n5 {
+    background-position: -400px -320px
+}
+
+big.n6 {
+    background-position: -480px -320px
+}
+
+big.n7 {
+    background-position: -560px -320px
+}
+
+big.n8 {
+    background-position: -640px -320px
+}
+
+big.n9 {
+    background-position: 0 -400px
+}
+
+big.n00 {
+    background-position: 0 -320px
+}
+
+big.n01 {
+    background-position: -80px -320px
+}
+
+big.n02 {
+    background-position: -160px -320px
+}
+
+big.n03 {
+    background-position: -240px -320px
+}
+
+big.n04 {
+    background-position: -320px -320px
+}
+
+big.n05 {
+    background-position: -400px -320px
+}
+
+big.n06 {
+    background-position: -480px -320px
+}
+
+big.n07 {
+    background-position: -560px -320px
+}
+
+big.n08 {
+    background-position: -640px -320px
+}
+
+big.n09 {
+    background-position: 0 -400px
+}
+
+big.n10 {
+    background-position: -80px -400px
+}
+
+big.n11 {
+    background-position: -160px -400px
+}
+
+big.n12 {
+    background-position: -240px -400px
+}
+
+big.n13 {
+    background-position: -320px -400px
+}
+
+big.n14 {
+    background-position: -400px -400px
+}
+
+big.n15 {
+    background-position: -480px -400px
+}
+
+big.n16 {
+    background-position: -560px -400px
+}
+
+big.n17 {
+    background-position: -640px -400px
+}
+
+big.n18 {
+    background-position: 0 -480px
+}
+
+big.n19 {
+    background-position: -80px -480px
+}
+
+big.n20 {
+    background-position: -160px -480px
+}
+
+big.n21 {
+    background-position: -240px -480px
+}
+
+big.n22 {
+    background-position: -320px -480px
+}
+
+big.n23 {
+    background-position: -400px -480px
+}
+
+big.n24 {
+    background-position: -480px -480px
+}
+
+big.n25 {
+    background-position: -560px -480px
+}
+
+big.n26 {
+    background-position: -640px -480px
+}
+
+big.n27 {
+    background-position: 0 -560px
+}
+
+big.n28 {
+    background-position: -80px -560px
+}
+
+big.n29 {
+    background-position: -160px -560px
+}
+
+big.n30 {
+    background-position: -240px -560px
+}
+
+big.n31 {
+    background-position: -320px -560px
+}
+
+big.n32 {
+    background-position: -400px -560px
+}
+
+big.n33 {
+    background-position: -480px -560px
+}
+
+big.n53 {
+    background-position: -560px -560px
+}
+
+big.n57 {
+    background-position: -720px -320px
+}
+
+big.n32 {
+    background-position: -720px -400px
+}
+
+big.n49 {
+    background-position: -720px -480px
+}
+
+big.n58 {
+    background-position: -720px -560px
+}
+
+big.n54 {
+    background-position: -800px -320px
+}
+
+big.n55 {
+    background-position: -800px -400px
+}
+
+big.n56 {
+    background-position: -800px -480px
+}
+
+big.n301 {
+    background-position: -880px -320px
+}
+
+big.n302 {
+    background-position: -880px -400px
+}
+
+table {
+    text-align: left;
+    width: 100%
+}
+
+.allPcImg {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat
+}
+
+.leftDown {
+    height: 11px;
+    width: 7px;
+    background-position: 0 0;
+    margin-bottom: 2px;
+    position: absolute;
+    top: 10px;
+    left: 12px
+}
+
+.rightDown {
+    height: 11px;
+    width: 7px;
+    background-position: -7px 0;
+    position: absolute;
+    bottom: 9px;
+    left: 65px
+}
+
+.iconSD {
+    background-position: -13px 0;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-left: 5px;
+    position: relative;
+    top: 10px;
+    width: 8px
+}
+
+.checkboxChecked {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat;
+    height: 12px;
+    width: 12px;
+    background-position: -21px 0;
+    position: relative;
+    top: 8px;
+    left: 4px;
+    margin-right: 11px
+}
+
+.checkboxNoChecked {
+    background: url(https://i.tq121.com.cn/i/typhoon/allPcImg.png) no-repeat;
+    height: 13px;
+    width: 13px;
+    background-position: -34px 0;
+    position: relative;
+    top: 7px;
+    left: 4px
+}
+
+.brlogoP {
+    height: 30px;
+    width: 140px;
+    background-position: -186px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.fullDiv {
+    position: absolute;
+    top: 170px;
+    left: 19px;
+    cursor: pointer
+}
+
+.moonDiv {
+    position: absolute;
+    top: 202px;
+    left: 14px;
+    cursor: pointer
+}
+
+.mapImgs {
+    background: url(https://i.tq121.com.cn/i/typhoon/mapImgs.png) no-repeat
+}
+
+.clearAll {
+    float: left;
+    color: #9aadca;
+    font-size: 12px;
+    padding-left: 20px;
+    cursor: pointer
+}
+
+.clearAll:hover {
+    color: #fff
+}
+
+.clearAll i {
+    display: block;
+    position: relative;
+    float: left;
+    top: 15px;
+    right: 5px;
+    height: 12px;
+    width: 12px;
+    background-position: 0 0
+}
+
+.fullCur {
+    height: 28px;
+    width: 28px;
+    background-position: -22px 0
+}
+
+.full {
+    height: 28px;
+    width: 28px;
+    background-position: -63px 0
+}
+
+.moonCur {
+    height: 40px;
+    width: 40px;
+    background-position: 0 -32px
+}
+
+.moon {
+    height: 40px;
+    width: 40px;
+    background-position: -50px -32px
+}

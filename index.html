@@ -1,0 +1,86 @@
+<!-- https://github.com/danwild/leaflet-velocity -->
+
+<!doctype html>
+<html>
+
+<head>
+	<title>LeafletVelocity Demo</title>
+	<meta charset="UTF-8" />
+
+	<script type="text/javascript" src="dist/jquery.min.js"></script>
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/leaflet-src.css">
+	<script src="./dist/leaflet-src.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/leaflet-velocity.css" />
+	<script type="text/javascript" src="dist/leaflet-velocity.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/leaflet-sidebar.css" />
+	<script type="text/javascript" src="dist/leaflet-sidebar.js"></script>
+	<link rel="stylesheet" href="css/pcstyle.css">
+	<link rel="stylesheet" href="iconLayer/iconLayers.css">
+	<script type="text/javascript" src="serchLeaflet/leaflet-search.js"></script>
+	<link rel="stylesheet" href="./leafletBookmark/leaflet.bookmarks.css">
+	<script type="text/javascript" src="./leafletBookmark/leaflet-bookmarks.js"></script>
+	<link rel="stylesheet" href="./leaflet-zoomslider/leaflet-zoomslider.css">
+	<script type="text/javascript" src="./leaflet-zoomslider/leaflet-zoomsider.js"></script>
+	<link rel="stylesheet" href="css/typhoon_title.css">
+	<script type="text/javascript" src="dist/leaflet-icon-pulse.js"></script>
+	<link rel="stylesheet" href="css/leaflet-icon-pulse.css">
+	
+	<link rel="stylesheet" href="css/index.css" />
+
+	<!--自定义的插件-->
+	<script src="js/buildMap.js"></script>
+
+</head>
+
+<body>
+
+	<div id="map"></div>
+
+	<div id="sidebar" class="sidebar collapsed">
+		<!-- Nav tabs -->
+		<div class="sidebar-tabs">
+			<ul role="tablist">
+				<li><a href="#basic-map" role="tab"><i class="fa fa-map"></i></a></li>
+				<li><a href="#typhoon-info" role="tab"><i class="fa fa-typhoon"></i></a></li>
+				<li><a href="#wind-info" role="tab"><i class="fa fa-wind"></i></a></li>
+				<li><a href="#earthquake-info" role="tab"><i class="fa fa-earthquake"></i></a></li>
+			</ul>
+
+			<ul role="tablist">
+				<li><a href="#settings" role="tab"><i class="fa fa-setting"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Tab panes -->
+		<div class="sidebar-content">
+			<div class="sidebar-pane" id="basic-map">
+				<h1 class="sidebar-header">
+					底图列表
+					<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+				</h1>
+			</div>
+			<div class="sidebar-pane" id="typhoon-info">
+				<h1 class="sidebar-header">台风列表<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+				</h1>
+			</div>
+			<div class="sidebar-pane" id="wind-info">
+				<h1 class="sidebar-header">风场信息<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+				</h1>
+			</div>
+			<div class="sidebar-pane" id="earthquake-info">
+				<h1 class="sidebar-header">地震数据<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+				</h1>
+			</div>
+
+			<div class="sidebar-pane" id="settings">
+				<h1 class="sidebar-header">设置<span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+
+</html>

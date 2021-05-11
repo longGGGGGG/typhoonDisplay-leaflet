@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+}
+
+#heading {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #CCC;
+}
+
+a {
+    color: #3388ff;
+}
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+}
+
+.leaflet-canvas-layer {
+    opacity: 0.55;
+}
+
+.info.legend{
+    background-color: rgb(238, 235, 235);
+    padding: 5px;
+    opacity:0.8; 
+    width: 100px;
+    left: -150px;
+    top: -200px;
+}
+.info.legend .color{
+    display: inline-block;width: 10px;height: 10px;
+}
+
+/* 如果需要侧边栏跨过底部导航栏，先需要知道导航栏的高度 */
+nav {
+    height: 5rem;
+}
+/* 一定要写在class选择器里！等会儿jquery要用到 */
+.sidebarClass {
+    position: fixed;    /* 先给个定位，侧边栏一般是相对于浏览器定位 */
+    right: -80%;    /* 侧边栏有多宽，就-多少，相当于先藏在视窗外边（从左边打开的话就换成left） */
+    width: 50%;
+    height: 20%;    /* 减去底部导航栏的高度 */
+    z-index: 9999;    /* 设置一个超大的数字覆盖所有元素，如果层叠不够或者未设置，那么侧边栏可能会被其他元素遮挡 */
+    transition: width 0.8s;    /* 最关键的一步！利用transition实现过渡效果，这里只需要水平过渡，所以width就行了，后面的时间几秒自行设置 */
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+/* 新建一个class，等会儿jquery要用到，原理也是利用transition：width改变就会启动过渡效果 */
+.addWidth {
+    width: 100%;    /* 设置为侧边栏宽度的2倍，才能完全露出 */
+}
